@@ -59,7 +59,7 @@ function Blight_Grenade:GetFinalEffect(p1,p2,p3)
 		local damage = SpaceDamage(p2, 0)
 		damage.iAcid = 1
 		damage.sAnimation = "ExploAcid1"
-		ret:AddArtillery(damage, "advanced/effects/shotup_swapother.png")
+		ret:AddArtillery(damage, "img/effects/shotup_blight_grenade.png")
 
 		for dir = DIR_START, DIR_END do
 		    local p4 = p2 + DIR_VECTORS[dir]
@@ -95,7 +95,7 @@ function Blight_Grenade:GetFinalEffect(p1,p2,p3)
 
 	local damage = SpaceDamage(p2, 0)
 	damage.sAnimation = "ExploAcid1"
-	ret:AddArtillery(damage, "advanced/effects/shotup_swapother.png")
+	ret:AddArtillery(damage, "img/effects/shotup_blight_grenade.png")
 
 	damage = SpaceDamage(p2, self.Damage, direction2)
 	damage.iAcid = 1
