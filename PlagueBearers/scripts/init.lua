@@ -83,6 +83,7 @@ local function init(self)
 });
 
 require(self.scriptPath.."pawns")
+modApi:appendAsset("img/effects/shotup_blight_grenade.png", self.resourcePath.."img/effects/shotup_blight_grenade.png")
 require(self.scriptPath.."weapons/heat_blaster")
 require(self.scriptPath.."weapons/sniper_rifle")
 require(self.scriptPath.."weapons/blight_grenade")
