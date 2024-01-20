@@ -63,6 +63,7 @@ function Sniper_Rifle:GetSkillEffect(p1,p2)
 	end
 	
 	local damage = SpaceDamage(target, self.Damage, direction)
+	damage.sAnimation = "explopush1_"..direction
 	if Board:IsPawnSpace(target)and not Board:GetPawn(target):IsDamaged() then
 		damage.iDamage = damage.iDamage * 2
 	end
